@@ -1,6 +1,6 @@
 # Pic-Reach
 
-Pic-Reach is a MERN (MongoDB, Express.js, React.js, Node.js) application designed to manage and store contact information of individuals, allowing users to perform CRUD (Create, Read, Update, Delete) operations.
+Pic-Reach is a MERN (MongoDB, Express.js, React.js, Node.js) application designed to manage and store the contact information of individuals, allowing users to perform CRUD (Create, Read, Update, Delete) operations.
 
 ## Features
 
@@ -15,7 +15,7 @@ Pic-Reach is a MERN (MongoDB, Express.js, React.js, Node.js) application designe
 2. Install dependencies for both the backend and frontend:
     ```bash
     # Navigate to the backend directory
-    cd backend
+    cd Backend
     npm install
     
     # Navigate to the frontend directory
@@ -29,18 +29,18 @@ Pic-Reach is a MERN (MongoDB, Express.js, React.js, Node.js) application designe
 1. Run the backend server:
     ```bash
     # Inside the backend directory
-    npm start
+    npm run dev
     ```
    The server should start at `http://localhost:5555`.
 
 2. Start the frontend application:
     ```bash
     # Inside the frontend directory
-    npm start
+    npm run dev
     ```
-   The React app should start at `http://localhost:3000`.
+   The React app should start at `http://localhost:5173`.
 
-3. Access the application by navigating to `http://localhost:3000` in your browser.
+3. Access the application by navigating to `http://localhost:5173` in your browser.
 
 ## Backend Routes
 

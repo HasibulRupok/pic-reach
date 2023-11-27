@@ -1,41 +1,75 @@
 # Pic-Reach
 
-Pic-Reach is a MERN stack application designed to manage and store contact information, including names, addresses, phone numbers, and images of individuals. It provides functionalities to create, read, update, and delete (CRUD) contacts through specific API endpoints.
+Pic-Reach is a MERN (MongoDB, Express.js, React.js, Node.js) application designed to manage and store contact information of individuals, allowing users to perform CRUD (Create, Read, Update, Delete) operations.
 
 ## Features
 
-- **View Contacts:** Retrieve all contacts or specific contact details.
-- **Add Contact:** Create new contact information with names, addresses, phone numbers, and images.
-- **Update Contact:** Modify existing contact details.
-- **Delete Contact:** Remove contacts and associated images from the database and server.
+- **User Management**: Create, Read, Update, and Delete contact information including name, address, phone number, and image.
+- **Image Upload**: Allows users to upload images along with contact information.
+- **React Frontend**: Utilizes React for a dynamic and interactive user interface.
+- **Express Backend**: Handles data routing and interacts with MongoDB via Mongoose.
+
+## Installation
+
+1. Clone this repository.
+2. Install dependencies for both the backend and frontend:
+    ```bash
+    # Navigate to the backend directory
+    cd backend
+    npm install
+    
+    # Navigate to the frontend directory
+    cd ../frontend
+    npm install
+    ```
+3. Set up MongoDB: Ensure MongoDB is installed and running locally or provide a MongoDB Atlas URI in the backend `.env` file.
+
+## Usage
+
+1. Run the backend server:
+    ```bash
+    # Inside the backend directory
+    npm start
+    ```
+   The server should start at `http://localhost:5555`.
+
+2. Start the frontend application:
+    ```bash
+    # Inside the frontend directory
+    npm start
+    ```
+   The React app should start at `http://localhost:3000`.
+
+3. Access the application by navigating to `http://localhost:3000` in your browser.
+
+## Backend Routes
+
+The backend API routes for interacting with user data are as follows:
+
+- `GET /users`: Retrieves all users' data.
+- `GET /users/:id`: Fetches a single user's data by ID.
+- `PUT /users/:id`: Updates an existing user's information.
+- `DELETE /users/:id`: Deletes a user and their associated image.
+
+## Frontend Routes
+
+The React frontend routes are:
+
+- `/`: Home page displaying the list of users.
+- `/users/edit/:id`: Page to edit a specific user's information.
+- `/users/create`: Page to add a new user.
+- `/users/delete/:id`: Page to delete a specific user.
 
 ## Technologies Used
 
-- **MongoDB:** Database for storing contact information.
-- **Express.js:** Backend framework for API handling.
-- **React.js:** Frontend library for the user interface.
-- **Node.js:** Runtime environment for the backend.
+- **Frontend**: React, React Router
+- **Backend**: Node.js, Express.js, MongoDB, Mongoose
 
-## Backend Setup
+## Contributing
 
-1. Clone the repository: `git clone [repository-url]`
-2. Install dependencies: `npm install`
-3. Set up environment variables (if needed).
-4. Run the backend server: `npm start`
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-## API Routes
+## License
 
-### Users Routes
-
-- **GET /users:** Retrieve all contacts.
-- **GET /users/:id:** Get details of a specific contact.
-- **POST /users:** Add a new contact.
-- **PUT /users/:id:** Update details of a contact.
-- **DELETE /users/:id:** Delete a contact and associated image.
-
-## Frontend (Not Provided)
-
-The repository does not include the frontend implementation. You will need to integrate this backend with a frontend application for a complete user experience.
-
-## Folder Structure
+This project is licensed under the [MIT License](LICENSE).
 

@@ -1,74 +1,41 @@
-Pic-Reach
-Pic-Reach is a MERN stack-based web application designed to manage and store contact information, including name, address, phone number, and images of individuals.
+# Pic-Reach
 
-Table of Contents
-Overview
-Features
-Tech Stack
-Getting Started
-API Endpoints
-Contributing
-License
-Overview
-Pic-Reach simplifies the management of contact information, providing CRUD functionalities to create, read, update, and delete user data. It allows users to store essential details along with images, making it easy to manage contacts efficiently.
+Pic-Reach is a MERN stack application designed to manage and store contact information, including names, addresses, phone numbers, and images of individuals. It provides functionalities to create, read, update, and delete (CRUD) contacts through specific API endpoints.
 
-Features
-Create new contact entries with name, address, phone number, and image.
-Retrieve contact information for individual users.
-Update existing user details.
-Delete user entries along with their associated images.
-Tech Stack
-Frontend: React
-Backend: Node.js, Express
-Database: MongoDB (with Mongoose ODM)
-Image Handling: Multer
-Getting Started
-Clone the repository:
+## Features
 
-bash
-Copy code
-git clone https://github.com/your-username/Pic-Reach.git
-Install dependencies:
+- **View Contacts:** Retrieve all contacts or specific contact details.
+- **Add Contact:** Create new contact information with names, addresses, phone numbers, and images.
+- **Update Contact:** Modify existing contact details.
+- **Delete Contact:** Remove contacts and associated images from the database and server.
 
-bash
-Copy code
-# Navigate to the backend folder
-cd Pic-Reach/backend
-npm install
+## Technologies Used
 
-# Navigate to the frontend folder
-cd ../frontend
-npm install
-Set up environment variables:
+- **MongoDB:** Database for storing contact information.
+- **Express.js:** Backend framework for API handling.
+- **React.js:** Frontend library for the user interface.
+- **Node.js:** Runtime environment for the backend.
 
-Create a .env file in the backend directory and configure it with necessary environment variables (e.g., database connection string).
+## Backend Setup
 
-Start the application:
+1. Clone the repository: `git clone [repository-url]`
+2. Install dependencies: `npm install`
+3. Set up environment variables (if needed).
+4. Run the backend server: `npm start`
 
-bash
-Copy code
-# Start the backend server
-cd ../backend
-npm start
+## API Routes
 
-# Start the frontend
-cd ../frontend
-npm start
-Access the application:
+### Users Routes
 
-Open your browser and navigate to http://localhost:3000 to use Pic-Reach.
+- **GET /users:** Retrieve all contacts.
+- **GET /users/:id:** Get details of a specific contact.
+- **POST /users:** Add a new contact.
+- **PUT /users/:id:** Update details of a contact.
+- **DELETE /users/:id:** Delete a contact and associated image.
 
-API Endpoints
-Base URL: http://localhost:5555
-GET /users: Retrieve all users' information.
-GET /users/:id: Retrieve information for a specific user.
-PUT /users/:id: Update user information.
-DELETE /users/:id: Delete a user and their associated image.
-POST /users: Add a new user along with an image.
-For detailed usage and request/response examples, refer to the backend codebase.
+## Frontend (Not Provided)
 
-Contributing
-Contributions are welcome! Feel free to submit issues or pull requests.
+The repository does not include the frontend implementation. You will need to integrate this backend with a frontend application for a complete user experience.
 
-License
-This project is licensed under the MIT License.
+## Folder Structure
+
